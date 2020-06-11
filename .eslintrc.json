@@ -19,7 +19,7 @@
   "rules": {
     "semi": ["error", "always"],
     "comma-dangle": [
-      "error",
+      "off",
       {
         "arrays": "always-multiline",
         "objects": "always-multiline"
@@ -38,7 +38,7 @@
     "no-param-reassign": ["warn"],
     "arrow-body-style": "off",
     "arrow-parens": [
-      "warn",
+      "off",
       "as-needed",
       {
         "requireForBlockBody": false
@@ -51,6 +51,7 @@
         "after": true
       }
     ],
+    "no-console": "off",
     "constructor-super": "error",
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
