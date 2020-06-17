@@ -25,7 +25,7 @@
         "objects": "always-multiline"
       }
     ],
-    "object-curly-spacing": ["error", "always"],
+    "react/jsx-one-expression-per-line": "off",
     "no-multiple-empty-lines": [
       "error",
       {
@@ -101,12 +101,13 @@
     "max-len": ["error", {"code": 250}],
     "max-lines-per-function": ["error", 80],
     "sort-keys": ["off", "asc"],
-
+    "import/no-unresolved": "off",
+    "object-curly-spacing": "off",
     "react/no-danger": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-indent": "off",
     "react/jsx-indent-props": "off",
-    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-closing-bracket-location": "off",
     "react/void-dom-elements-no-children": "error",
     "react/jsx-tag-spacing": "off",
     "react/jsx-no-literals": "off",
