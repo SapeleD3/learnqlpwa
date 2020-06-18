@@ -7,3 +7,9 @@ export const NotFoundLogo = styled.img`
 	width: 50%;
 	transform: translate(-50%, -50%);
 `;
+
+export const LoginImage = styled.img`
+	margin: 0;
+	width: ${({size}) => size};
+	${({Mstyles}) => Mstyles};
+`;

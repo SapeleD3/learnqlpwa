@@ -16,3 +16,5 @@ export const NotFoundInner = styled.div`
 	width: 200px;
 	height: 100px;
 `;
+
+export const LoginContainer = styled.div``;

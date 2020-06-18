@@ -8,18 +8,25 @@ const {login, WILD_CARD, home} = ROUTES;
 const NotFound = lazy(() => import('../../components/NotFound'));
 
 const routes = [
-	{path: login, component: lazy(() => import('../../pages/Login/'))},
+	{path: login, Component: lazy(() => import('../../pages/Login/'))},
 ];
 
-export default function publicRouter({theme}) {
+export default function publicRouter({theme, device}) {
 	return (
 		<BrowserRouter>
 			<Switch>
 				<Route exact path={home}>
 					<Redirect to={login} />
 				</Route>
-				{routes.map(({path, component}) => (
-					<Route key={path} path={path} exact component={component} />
+				{routes.map(({path, Component}) => (
+					<Route
+						key={path}
+						path={path}
+						exact
+						component={() => (
+							<Component theme={theme} device={device} />
+						)}
+					/>
 				))}
 				<Route path={WILD_CARD}>
 					<NotFound device="mobile" theme={theme} />
@@ -31,4 +38,5 @@ export default function publicRouter({theme}) {
 
 publicRouter.propTypes = {
 	theme: string.isRequired,
+	device: string.isRequired,
 };

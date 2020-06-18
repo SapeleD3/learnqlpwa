@@ -33,7 +33,7 @@ const App = () => {
 						<WindowSize>
 							{({width}) =>
 								width < 760 ? (
-									<MobileApp theme={theme} />
+									<MobileApp theme={theme} device="mobile" />
 								) : (
 									<TabDesktopApp theme={theme} />
 								)
