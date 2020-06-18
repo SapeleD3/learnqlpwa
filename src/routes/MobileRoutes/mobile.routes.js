@@ -8,10 +8,15 @@ const {lazy} = React;
 const AuthApp = lazy(() => import('./Authenticated'));
 const PublicApp = lazy(() => import('./Unauthenticated'));
 
-export default function MobileApp({theme}) {
-	return isLoggedIn ? <AuthApp theme={theme} /> : <PublicApp theme={theme} />;
+export default function MobileApp({theme, device}) {
+	return isLoggedIn ? (
+		<AuthApp theme={theme} device={device} />
+	) : (
+		<PublicApp theme={theme} device={device} />
+	);
 }
 
 MobileApp.propTypes = {
 	theme: string.isRequired,
+	device: string.isRequired,
 };

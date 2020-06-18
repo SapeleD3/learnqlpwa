@@ -16,6 +16,24 @@ export const H2 = styled.h2`
 	color: ${({theme}) => theme.text};
 	font-size: ${({size}) => size};
 	text-align: center;
+	${({Mstyles}) => Mstyles};
+`;
+
+export const LOGINTEXT = styled.h2`
+	color: ${({theme}) => theme.text};
+	font-size: ${({size}) => size};
+	text-align: left;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+`;
+
+export const LOGINTEXT2 = styled.h2`
+	color: ${({theme}) => theme.text};
+	font-size: ${({size}) => size};
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 `;
 
 export const P = styled.p`
