@@ -103,6 +103,7 @@
     "sort-keys": ["off", "asc"],
     "import/no-unresolved": "off",
     "object-curly-spacing": "off",
+    "object-curly-newline": "off",
     "react/no-danger": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-indent": "off",
@@ -118,7 +119,8 @@
     "import/prefer-default-export": "off",
     "implicit-arrow-linebreak": "off",
     "no-confusing-arrow": "off",
-    "react/jsx-curly-newline": "off"
+    "react/jsx-curly-newline": "off",
+    "operator-linebreak": "off"
   },
   "settings": {
     "react": {

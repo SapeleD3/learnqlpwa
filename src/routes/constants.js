@@ -3,13 +3,13 @@
  * @constant
  */
 
-import Home from '../../pages/Home';
+import Home from '../pages/Home';
 
 export const ROUTES = {
 	login: '/login',
-	home: '/home',
+	home: '/',
 	register: '/register',
-	wild_card: '/*',
+	WILD_CARD: '/*',
 };
 
 /**

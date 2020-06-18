@@ -2,6 +2,7 @@ import React from 'react';
 
 const loader = {
 	display: 'flex',
+	backgroundColor: 'F6F1F1',
 	justifyContent: 'center',
 	alignItems: 'center',
 	height: '100vh',
