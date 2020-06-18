@@ -2,6 +2,7 @@ import React, {Suspense} from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
 import {Ripple} from 'react-spinners-css';
+import WindowSize from '@reach/window-size';
 import Loading from './components/fullPageLoader';
 import MobileApp from './routes/MobileRoutes/mobile.routes';
 import TabDesktopApp from './routes/TDRoutes/tab-desktop.routes';
@@ -14,8 +15,13 @@ const App = () => {
 					<Ripple color="#242835" />
 				</Loading>
 			}>
-			{console.log(window.screen.width < 760)}
-			{window.screen.width < 760 ? <MobileApp /> : <TabDesktopApp />}
+			<div className="App">
+				<WindowSize>
+					{({width}) =>
+						width < 760 ? <MobileApp /> : <TabDesktopApp />
+					}
+				</WindowSize>
+			</div>
 		</Suspense>
 	);
 };
